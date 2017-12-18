@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="谢哥哥好帅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bES-gV-PSv">
+                                <rect key="frame" x="144" y="66" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxj-2O-3WO">
+                                <rect key="frame" x="162.5" y="95" width="51" height="30"/>
+                                <state key="normal" title="siri播放">
+                                    <color key="titleColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="siriPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HOz-Q5-b9a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXI-Ze-xze">
+                                <rect key="frame" x="70" y="145" width="62" height="30"/>
+                                <state key="normal" title="开始录音">
+                                    <color key="titleColor" red="0.46205851749999999" green="1" blue="0.17362231750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mW-zW-tjk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owq-Ww-eqd">
+                                <rect key="frame" x="243.5" y="145" width="62" height="30"/>
+                                <state key="normal" title="播放录音">
+                                    <color key="titleColor" red="1" green="0.47203562126640097" blue="0.36465334521973447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playRecordSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Mb-NM-abt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTn-60-1NI">
+                                <rect key="frame" x="156.5" y="145" width="62" height="30"/>
+                                <state key="normal" title="停止录音"/>
+                                <connections>
+                                    <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgx-dP-rlI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="录音情况" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjh-iz-gQh">
+                                <rect key="frame" x="153" y="185" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="语音识别结果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPB-LR-7XK">
+                                <rect key="frame" x="135" y="346" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8G-QN-LXQ">
+                                <rect key="frame" x="131" y="296" width="112" height="30"/>
+                                <state key="normal" title="siri识别音频文件"/>
+                                <connections>
+                                    <action selector="recognizeLocalRecordFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMp-EO-0YJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWX-41-EPv">
+                                <rect key="frame" x="146" y="246" width="82" height="30"/>
+                                <state key="normal" title="siri开始录音"/>
+                                <connections>
+                                    <action selector="SpeechRecordBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Fp-5r-gFW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EWX-41-EPv" firstAttribute="top" secondItem="Hjh-iz-gQh" secondAttribute="bottom" constant="40" id="1hs-zf-ZAd"/>
+                            <constraint firstItem="bES-gV-PSv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="62H-Kz-uiv"/>
+                            <constraint firstItem="bES-gV-PSv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="7T4-d8-gKD"/>
+                            <constraint firstItem="sPB-LR-7XK" firstAttribute="top" secondItem="C8G-QN-LXQ" secondAttribute="bottom" constant="20" id="8Gh-sW-dbx"/>
+                            <constraint firstItem="RTn-60-1NI" firstAttribute="leading" secondItem="gXI-Ze-xze" secondAttribute="trailing" constant="25" id="AvZ-pa-juV"/>
+                            <constraint firstItem="RTn-60-1NI" firstAttribute="centerY" secondItem="gXI-Ze-xze" secondAttribute="centerY" id="CQp-Gz-IcR"/>
+                            <constraint firstItem="Hjh-iz-gQh" firstAttribute="centerX" secondItem="bES-gV-PSv" secondAttribute="centerX" id="G8Y-uz-g74"/>
+                            <constraint firstItem="zxj-2O-3WO" firstAttribute="centerX" secondItem="bES-gV-PSv" secondAttribute="centerX" id="PSr-2U-qWR"/>
+                            <constraint firstItem="RTn-60-1NI" firstAttribute="top" secondItem="zxj-2O-3WO" secondAttribute="bottom" constant="20" id="bOD-ZF-0dv"/>
+                            <constraint firstItem="sPB-LR-7XK" firstAttribute="centerX" secondItem="C8G-QN-LXQ" secondAttribute="centerX" id="brI-kc-u8L"/>
+                            <constraint firstItem="C8G-QN-LXQ" firstAttribute="centerX" secondItem="EWX-41-EPv" secondAttribute="centerX" id="dEP-HK-QGw"/>
+                            <constraint firstItem="Hjh-iz-gQh" firstAttribute="top" secondItem="owq-Ww-eqd" secondAttribute="bottom" constant="10" id="ddz-sO-KED"/>
+                            <constraint firstItem="zxj-2O-3WO" firstAttribute="top" secondItem="bES-gV-PSv" secondAttribute="bottom" constant="8" id="diT-Ju-erV"/>
+                            <constraint firstItem="owq-Ww-eqd" firstAttribute="centerY" secondItem="gXI-Ze-xze" secondAttribute="centerY" id="fh5-HZ-nys"/>
+                            <constraint firstItem="owq-Ww-eqd" firstAttribute="leading" secondItem="RTn-60-1NI" secondAttribute="trailing" constant="25" id="gv2-5t-zBh"/>
+                            <constraint firstItem="C8G-QN-LXQ" firstAttribute="top" secondItem="EWX-41-EPv" secondAttribute="bottom" constant="20" id="lXq-VC-rXQ"/>
+                            <constraint firstItem="EWX-41-EPv" firstAttribute="centerX" secondItem="Hjh-iz-gQh" secondAttribute="centerX" id="pvP-Px-cG8"/>
+                            <constraint firstItem="RTn-60-1NI" firstAttribute="centerX" secondItem="bES-gV-PSv" secondAttribute="centerX" id="zvI-5O-lG2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="recordLabel" destination="Hjh-iz-gQh" id="jmE-Oi-HEd"/>
+                        <outlet property="siriLabel" destination="bES-gV-PSv" id="2xs-fh-f6a"/>
+                        <outlet property="speechBtn" destination="EWX-41-EPv" id="Xd2-Xb-Mna"/>
+                        <outlet property="unarchieveResult" destination="sPB-LR-7XK" id="84F-TS-64I"/>
+                        <outlet property="unarchieveSpeechBtn" destination="C8G-QN-LXQ" id="ppo-pi-whT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="68.815592203898049"/>
+        </scene>
+    </scenes>
+</document>
